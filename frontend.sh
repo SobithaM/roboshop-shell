@@ -9,7 +9,7 @@ echo -e "\e[35mextracting downloded content \e[0m"
 cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 echo -e "\e[35mcoping nginx config for roboshop \e[0m"
-cp ${pwd} /configs/ngnix-roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp ${code-dir} /configs/ngnix-roboshop.conf /etc/nginx/default.d/roboshop.conf
 echo -e "\e[35menabling nginx \e[0m"
 systemctl enable nginx
 echo -e "\e[35mrestart nginx \e[0m"
