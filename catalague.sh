@@ -6,6 +6,7 @@ echo -e "\e[35adding user as roboshop \e[0m"
 useradd roboshop
 echo -e "\e[35creating a dir \e[0m"
 mkdir /app
+rm -rf /app/*
 echo -e "\e[35m downloding catalague setup file \e[0m"
 curl -L -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
 echo -e "\e[35mchange app dir \e[0m"
